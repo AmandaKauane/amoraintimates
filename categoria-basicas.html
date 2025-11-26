@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Linha Básica - Amora Intimates</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="page">
+
+  <header>
+    <div class="logo-area">
+      <div class="logo-circle">A</div>
+      <div>
+        <h1>Amora Intimates</h1>
+        <span>Lingerie boutique</span>
+      </div>
+    </div>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="categoria-conjuntos-com-bojo.html">Catálogo</a>
+      <a href="guia-tamanhos.html">Guia de tamanhos</a>
+      <a href="sobre.html">Sobre nós</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+
+    <div class="header-right">
+      <div class="mini-info">Entrega gratuita em Itapeva</div>
+      <a href="carrinho.html" class="cart-icon">
+        🛍
+        <div class="cart-count" id="cart-count">0</div>
+      </a>
+    </div>
+  </header>
+
+  <h2 class="page-title">Linha básica</h2>
+  <p class="page-subtitle">
+    Conjuntos confortáveis e essenciais — perfeitos para o dia a dia.
+  </p>
+
+  <section>
+    <div id="product-list-auto" data-tipo="basica" class="product-list"></div>
+  </section>
+
+  <footer>
+    <!-- ================== CATEGORIAS - MENU GLOBAL ================== -->
+<section class="section-categorias">
+  <div class="section-header">
+    <h2>Shop our categories</h2>
+    <p>Escolha o tipo de peça que combina com o seu momento.</p>
+  </div>
+
+  <div class="categorias-grid">
+    <!-- CONJUNTOS C/ BOJO -->
+    <a href="categoria-conjuntos-com-bojo.html" class="categoria-card">
+      <div class="categoria-img"></div>
+      <div class="categoria-body">
+        <h3>CONJUNTOS C/ BOJO</h3>
+      </div>
+    </a>
+
+    <!-- CONJUNTOS S/ BOJO -->
+    <a href="categoria-conjuntos-sem-bojo.html" class="categoria-card">
+      <div class="categoria-img"></div>
+      <div class="categoria-body">
+        <h3>CONJUNTOS S/ BOJO</h3>
+      </div>
+    </a>
+
+    <!-- BABY DOLL -->
+    <a href="categoria-baby-doll.html" class="categoria-card">
+      <div class="categoria-img"></div>
+      <div class="categoria-body">
+        <h3>BABY DOLL</h3>
+      </div>
+    </a>
+
+    <!-- CAMISOLA -->
+    <a href="categoria-camisola.html" class="categoria-card">
+      <div class="categoria-img"></div>
+      <div class="categoria-body">
+        <h3>CAMISOLA</h3>
+      </div>
+    </a>
+
+    <!-- CALCINHA AVULSA (EM BREVE) -->
+    <a href="#" class="categoria-card">
+      <div class="categoria-img"></div>
+      <div class="categoria-body">
+        <h3>CALCINHA AVULSA</h3>
+        <p>Em breve</p>
+      </div>
+    </a>
+
+    <!-- SUTIÃ AVULSO (EM BREVE) -->
+    <a href="#" class="categoria-card">
+      <div class="categoria-img"></div>
+      <div class="categoria-body">
+        <h3>SUTIÃ AVULSO</h3>
+        <p>Em breve</p>
+      </div>
+    </a>
+  </div>
+</section>
+<!-- ================== FIM CATEGORIAS ================== -->
+
+    <span>© <span id="ano-atual"></span> Amora Intimates.</span>
+    <span>Instagram: @amoraintimatesoficial • WhatsApp: (15) 99762-8023</span>
+  </footer>
+
+</div>
+
+
+<!-- MODAL -->
+<div class="modal-backdrop" id="product-modal">
+  <div class="modal-box">
+    <div class="modal-title" id="modal-product-name">Nome do produto</div>
+    <div class="modal-subtitle" id="modal-product-price">R$ 0,00</div>
+
+    <div class="modal-row">
+      <span class="modal-label">Tamanho:</span>
+      <select id="modal-size" class="modal-select">
+        <option value="">Selecione</option>
+        <option value="P">P</option>
+        <option value="M">M</option>
+        <option value="G">G</option>
+        <option value="GG">GG</option>
+        <option value="XG">XG</option>
+      </select>
+    </div>
+
+    <div class="modal-row">
+      <span class="modal-label">Quantidade:</span>
+      <input id="modal-qty" class="modal-input" type="number" min="1" value="1">
+    </div>
+
+    <div class="modal-guide">
+      <strong>Guia rápido de tamanhos:</strong>
+      <ul>
+        <li><strong>P</strong> — 34 a 36</li>
+        <li><strong>M</strong> — 38 a 40</li>
+        <li><strong>G</strong> — 42 a 44</li>
+        <li><strong>GG</strong> — 46</li>
+        <li><strong>XG</strong> — 48+</li>
+      </ul>
+    </div>
+
+    <div class="modal-actions">
+      <button class="btn-modal-secondary" id="modal-cancelar">Cancelar</button>
+      <button class="btn-modal-primary" id="modal-add-cart">Adicionar ao carrinho</button>
+    </div>
+  </div>
+</div>
+
+<script src="produtos-data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
+<a href="https://wa.me/5515997628023" class="whatsapp-float" target="_blank">
+  <svg width="34" height="34" viewBox="0 0 32 32" fill="none">
+    <path fill="#fff" d="M16 .3C7.5.3.5 7.3.5 15.8c0 3 .9 5.9 2.6 8.3L1 31l7.1-2c2.3 1.2 4.8 1.8 7.4 1.8 8.5 0 15.5-7 15.5-15.5S24.5.3 16 .3zm0 28c-2.3 0-4.6-.6-6.6-1.8l-.5-.3-4.2 1.2 1.1-4.1-.3-.5c-1.6-2.2-2.4-4.8-2.4-7.5C3.1 8.6 8.9 2.8 16 2.8s12.9 5.8 12.9 13c-.1 7.1-5.9 12.4-12.9 12.4zm7.4-9.3c-.4-.2-2.3-1.1-2.7-1.3-.4-.1-.7-.2-1 .2-.3.4-1.1 1.3-1.4 1.6-.3.3-.5.3-.9.1s-1.8-.7-3.4-2.1c-1.3-1.2-2.1-2.6-2.4-3-.2-.4 0-.6.1-.8l.6-.7c.2-.3.3-.4.4-.7.1-.3 0-.5 0-.7 0-.2-1-2.5-1.4-3.4-.4-.8-.7-.7-1-.7h-.9c-.3 0-.7.1-1 .5-.3.4-1.3 1.3-1.3 3.2 0 1.9 1.4 3.7 1.6 3.9.2.3 2.7 4.1 6.5 5.7 3.8 1.5 3.8 1 4.5 1 1-.1 2.3-.9 2.6-1.8.3-.9.3-1.7.2-1.8-.2-.1-.5-.2-.9-.3z"/>
+  </svg>
+</a>

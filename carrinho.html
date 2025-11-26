@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Carrinho - Amora Intimates</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="page">
+  <!-- HEADER -->
+<!-- HEADER BONITO COM LOGO + MENU + CARRINHO -->
+<header class="amora-header">
+  <div class="header-inner">
+
+    <!-- LOGO DA MARCA -->
+    <a href="index.html">
+      <img src="img/logo.png" class="header-logo" alt="Amora Intimates">
+    </a>
+
+    <!-- MENU (APENAS PÁGINAS, SEM CATEGORIAS) -->
+    <nav class="header-nav">
+      <a href="index.html">Home</a>
+      <a href="sobre.html">Sobre nós</a>
+      <a href="contato.html">Contato</a>
+      <a href="guia-tamanhos.html">Guia de tamanhos</a>
+    </nav>
+
+    <!-- CARRINHO -->
+    <div class="header-right">
+      <div class="cart-icon" onclick="window.location.href='carrinho.html'">
+        <span class="cart-count" id="cart-count">0</span>
+        🛒
+      </div>
+    </div>
+
+  </div>
+</header>
+<!-- HEADER BONITO COM LOGO + MENU + CARRINHO --></header>
+
+  <h2 class="page-title">Seu carrinho</h2>
+  <p class="page-subtitle">
+    Revise os itens escolhidos. Ao finalizar, você será direcionada para o WhatsApp com o resumo do pedido.
+  </p>
+
+  <div class="cart-wrapper">
+    <table class="cart-table">
+      <thead>
+        <tr>
+          <th>Produto</th>
+          <th>Tam</th>
+          <th>Preço</th>
+          <th>Qtd</th>
+          <th>Subtotal</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody id="cart-body">
+        <!-- preenchido pelo script.js -->
+      </tbody>
+    </table>
+
+    <div class="cart-total" id="cart-total">
+      Total: R$ 0,00
+    </div>
+
+    <!-- BOTÕES: COMPRAR MAIS ITENS + FINALIZAR -->
+    <div style="margin-top:14px; display:flex; justify-content:flex-end; gap:8px; flex-wrap:wrap;">
+      <button class="btn-continuar" onclick="window.location.href='index.html#categorias'">
+        Comprar mais itens
+      </button>
+
+      <button class="btn-finalizar" id="btn-finalizar">
+        Finalizar pedido pelo WhatsApp
+        <span>💬</span>
+      </button>
+    </div>
+  </div>
+
+  <footer>
+    <span>© <span id="ano-atual"></span> Amora Intimates.</span>
+    <span>Entrega gratuita em Itapeva • Instagram: @amoraintimatesoficial</span>
+  </footer>
+</div>
+
+<!-- MODAL DO PRODUTO (mesmo de todas as páginas) -->
+<div class="modal-backdrop" id="product-modal">
+  <div class="modal-box">
+    <div class="modal-title" id="modal-product-name">Nome do produto</div>
+    <div class="modal-subtitle" id="modal-product-price">R$ 0,00</div>
+
+    <div class="modal-row">
+      <span class="modal-label">Tamanho:</span>
+      <select id="modal-size" class="modal-select">
+        <option value="">Selecione</option>
+        <option value="P">P</option>
+        <option value="M">M</option>
+        <option value="G">G</option>
+        <option value="GG">GG</option>
+        <option value="XG">XG</option>
+      </select>
+    </div>
+
+    <div class="modal-row">
+      <span class="modal-label">Quantidade:</span>
+      <input id="modal-qty" class="modal-input" type="number" min="1" value="1">
+    </div>
+
+    <div class="modal-guide">
+      <strong>Guia rápido de tamanhos (numeração aproximada):</strong>
+      <ul>
+        <li><strong>P</strong> — veste em média 34 a 36</li>
+        <li><strong>M</strong> — veste em média 38 a 40</li>
+        <li><strong>G</strong> — veste em média 42 a 44</li>
+        <li><strong>GG</strong> — veste em média 46</li>
+        <li><strong>XG</strong> — veste em média 48 ou mais</li>
+      </ul>
+      <span style="font-size:11px; display:block; margin-top:4px;">
+        Se ficar na dúvida, fale com a gente pelo WhatsApp. 💗
+      </span>
+    </div>
+
+    <div class="modal-actions">
+      <button class="btn-modal-secondary" id="modal-cancelar">Cancelar</button>
+      <button class="btn-modal-primary" id="modal-add-cart">Adicionar ao carrinho</button>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+

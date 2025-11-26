@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Amora Intimates - Lingerie Boutique</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="page">
+
+  <!-- HEADER -->
+<!-- HEADER BONITO COM LOGO + MENU + CARRINHO -->
+<header class="amora-header">
+  <div class="header-inner">
+
+    <!-- LOGO DA MARCA -->
+    <a href="index.html">
+      <img src="img/logo.png" class="header-logo" alt="Amora Intimates">
+    </a>
+
+    <!-- MENU (APENAS PÁGINAS, SEM CATEGORIAS) -->
+    <nav class="header-nav">
+      <a href="index.html">Home</a>
+      <a href="sobre.html">Sobre nós</a>
+      <a href="contato.html">Contato</a>
+      <a href="guia-tamanhos.html">Guia de tamanhos</a>
+    </nav>
+
+    <!-- CARRINHO -->
+    <div class="header-right">
+      <div class="cart-icon" onclick="window.location.href='carrinho.html'">
+        <span class="cart-count" id="cart-count">0</span>
+        🛒
+      </div>
+    </div>
+
+  </div>
+</header>
+<!-- HEADER BONITO COM LOGO + MENU + CARRINHO -->
+
+
+  <!-- HERO -->
+  <section class="hero">
+  <div class="hero-inner polaroid-two-sides">
+
+    <!-- FOTO ESQUERDA -->
+    <div class="hero-polaroid left">
+      <div class="polaroid-frame">
+        <img src="img/hero1.jpeg" alt="Modelo Amora Intimates">
+      </div>
+    </div>
+
+    <!-- TÍTULO CENTRAL -->
+    <div class="hero-center">
+      <div class="hero-badge-top">NEW ARRIVALS • AMORA INTIMATES</div>
+
+      <h2 class="hero-title">Lingeries delicadas<br>& sexys</h2>
+
+      <div class="hero-subtitle">
+        CONJUNTOS, BABY DOLLS E CAMISOLAS SOB ENCOMENDA
+      </div>
+
+      <div class="hero-cta">
+        <button class="btn-hero" onclick="window.location.href='catalogo.html'">
+          VER COLEÇÃO →
+        </button>
+      </div>
+    </div>
+
+    <!-- FOTO DIREITA -->
+    <div class="hero-polaroid right">
+      <div class="polaroid-frame">
+        <img src="img/hero2.jpeg" alt="Modelo Amora Intimates">
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+  <!-- AVISO SOB ENCOMENDA -->
+  <div class="info-bar">
+    <span class="dot"></span>
+    Somos uma loja recente e, para manter variedade e qualidade,
+    <strong>trabalhamos com peças sob encomenda — 15 a 20 dias</strong> (podendo chegar antes).
+    <span class="dot"></span>
+  </div>
+
+  <!-- CATEGORIAS -->
+  <section>
+    <div class="section-header">
+      <h2>Shop our categories</h2>
+      <p>Escolha o tipo de peça que combina com o seu momento.</p>
+    </div>
+
+    <div class="categorias-grid">
+
+      <a href="categoria-conjuntos-com-bojo.html" class="categoria-card">
+        <div class="categoria-body">
+          <h3>Conjuntos c/ bojo</h3>
+        </div>
+      </a>
+
+      <a href="categoria-conjuntos-sem-bojo.html" class="categoria-card">
+        <div class="categoria-body">
+          <h3>Conjuntos s/ bojo</h3>
+        </div>
+      </a>
+
+      <a href="categoria-baby-doll.html" class="categoria-card">
+        <div class="categoria-body">
+          <h3>Baby doll</h3>
+        </div>
+      </a>
+
+      <a href="categoria-camisola.html" class="categoria-card">
+        <div class="categoria-body">
+          <h3>Camisola</h3>
+        </div>
+      </a>
+
+      <div class="categoria-card">
+        <div class="categoria-body">
+          <h3>Calcinha avulsa</h3>
+          <p>Em breve</p>
+        </div>
+      </div>
+
+      <div class="categoria-card">
+        <div class="categoria-body">
+          <h3>Sutiã avulso</h3>
+          <p>Em breve</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- DESTAQUES -->
+  <!-- DESTAQUES -->
+<section>
+  <div class="section-header">
+    <h2>Destaques da coleção</h2>
+    <p>Peças queridinhas para você se apaixonar.</p>
+  </div>
+
+  <div class="produtos-grid">
+
+    <!-- BABY DOLL AMORA -->
+    <article class="produto-card">
+      <div class="produto-img">
+        <img src="img/babydoll8 (2).jpeg" alt="Baby Doll Amora – Cor Especial">
+      </div>
+      <div class="produto-body">
+        <span class="produto-tag">Baby doll</span>
+        <h3>Baby Doll Amora – Cor Especial</h3>
+        <p class="produto-desc">
+          Tecido leve, toque macio e caimento confortável para noites especiais.
+        </p>
+        <div class="produto-footer">
+          <div>
+            <div class="produto-preco">R$ 54,90</div>
+            <div class="prazo">Sob encomenda: 15–20 dias</div>
+          </div>
+          <button class="btn-comprar"
+            data-product-name="Baby Doll Amora – Cor Especial"
+            data-product-price="54,90">
+            Comprar +
+          </button>
+        </div>
+      </div>
+    </article>
+
+    <!-- CONJUNTO VALENTINA – VERMELHO & PRETO (S/ BOJO) -->
+    <article class="produto-card">
+      <div class="produto-img">
+        <img src="img/pretovermelho-renda-s-bojo.jpeg"
+     alt="Conjunto Valentina – Vermelho & Preto (s/ bojo)">
+      </div>
+      <div class="produto-body">
+        <span class="produto-tag">Linha sexy • s/ bojo</span>
+        <h3>Conjunto Valentina – Vermelho & Preto (s/ bojo)</h3>
+        <p class="produto-desc">
+          Transparência elegante, renda marcante e modelagem sem bojo para quem prefere leveza.
+        </p>
+        <div class="produto-footer">
+          <div>
+            <div class="produto-preco">R$ 67,90</div>
+            <div class="prazo">Sob encomenda: 15–20 dias</div>
+          </div>
+          <button class="btn-comprar"
+            data-product-name="Conjunto Valentina – Vermelho & Preto (s/ bojo)"
+            data-product-price="67,90">
+            Comprar +
+          </button>
+        </div>
+      </div>
+    </article>
+
+    <!-- CONJUNTO AMORA – COR ESPECIAL (C/ BOJO) -->
+    <article class="produto-card">
+      <div class="produto-img">
+        <img src="img/pink-renda-c-bojo (2).jpeg" alt="Conjunto Amora – Cor Especial (c/ bojo)">
+      </div>
+      <div class="produto-body">
+        <span class="produto-tag">Conjunto c/ bojo</span>
+        <h3>Conjunto Amora – Cor Especial (c/ bojo)</h3>
+        <p class="produto-desc">
+          Bojo confortável, renda delicada e cor vibrante que é a cara da Amora Intimates.
+        </p>
+        <div class="produto-footer">
+          <div>
+            <div class="produto-preco">R$ 67,90</div>
+            <div class="prazo">Sob encomenda: 15–20 dias</div>
+          </div>
+          <button class="btn-comprar"
+            data-product-name="Conjunto Amora – Cor Especial (c/ bojo)"
+            data-product-price="67,90">
+            Comprar +
+          </button>
+        </div>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+  <!-- FOOTER -->
+  <footer>
+    <span>© <span id="ano-atual"></span> Amora Intimates.</span>
+    <span>Instagram: @amoraintimatesoficial • WhatsApp: (15) 99762-8023</span>
+  </footer>
+
+</div>
+
+<script src="produtos-data.js"></script>
+<script src="script.js"></script>
+<a href="https://wa.me/5515997628023" class="whatsapp-float" target="_blank">
+  <svg width="34" height="34" viewBox="0 0 32 32" fill="none">
+    <path fill="#fff" d="M16 .3C7.5.3.5 7.3.5 15.8c0 3 .9 5.9 2.6 8.3L1 31l7.1-2c2.3 1.2 4.8 1.8 7.4 1.8 8.5 0 15.5-7 15.5-15.5S24.5.3 16 .3zm0 28c-2.3 0-4.6-.6-6.6-1.8l-.5-.3-4.2 1.2 1.1-4.1-.3-.5c-1.6-2.2-2.4-4.8-2.4-7.5C3.1 8.6 8.9 2.8 16 2.8s12.9 5.8 12.9 13c-.1 7.1-5.9 12.4-12.9 12.4zm7.4-9.3c-.4-.2-2.3-1.1-2.7-1.3-.4-.1-.7-.2-1 .2-.3.4-1.1 1.3-1.4 1.6-.3.3-.5.3-.9.1s-1.8-.7-3.4-2.1c-1.3-1.2-2.1-2.6-2.4-3-.2-.4 0-.6.1-.8l.6-.7c.2-.3.3-.4.4-.7.1-.3 0-.5 0-.7 0-.2-1-2.5-1.4-3.4-.4-.8-.7-.7-1-.7h-.9c-.3 0-.7.1-1 .5-.3.4-1.3 1.3-1.3 3.2 0 1.9 1.4 3.7 1.6 3.9.2.3 2.7 4.1 6.5 5.7 3.8 1.5 3.8 1 4.5 1 1-.1 2.3-.9 2.6-1.8.3-.9.3-1.7.2-1.8-.2-.1-.5-.2-.9-.3z"/>
+  </svg>
+</a>
+</body>
+</html>

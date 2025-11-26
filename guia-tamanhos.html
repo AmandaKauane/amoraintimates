@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Guia de Tamanhos – Amora Intimates</title>
+
+  <!-- CSS principal da loja -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Fonte opcional, se você já usar em outras páginas pode repetir -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+
+  <style>
+    /* ESTILO ESPECÍFICO DO GUIA – usa as mesmas cores do tema */
+
+    .tamanhos-wrapper {
+      max-width: 900px;
+      margin: 32px auto 0;
+      background: #ffffffdd;
+      border-radius: 22px;
+      padding: 30px 24px;
+      border: 1px solid rgba(249,212,220,0.9);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.06);
+    }
+
+    .tamanhos-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 28px;
+      text-align: center;
+      color: var(--texto-escuro);
+      margin-bottom: 6px;
+    }
+
+    .tamanhos-subtitle {
+      text-align: center;
+      font-size: 14px;
+      color: var(--texto-suave);
+      margin-bottom: 24px;
+      letter-spacing: 0.02em;
+    }
+
+    .tabela-tamanhos {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 26px;
+    }
+
+    .tabela-tamanhos th {
+      background: var(--rosa-medio);
+      color: #fff;
+      padding: 10px;
+      font-size: 13px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .tabela-tamanhos td {
+      padding: 10px;
+      font-size: 14px;
+      border-bottom: 1px solid rgba(243,191,203,0.4);
+    }
+
+    .tabela-tamanhos tr:nth-child(even) td {
+      background: #fff7fb;
+    }
+
+    .como-medir {
+      margin-top: 10px;
+      padding: 18px;
+      background: #fff1f6;
+      border-radius: 16px;
+      border: 1px solid rgba(243,191,203,0.6);
+    }
+
+    .como-medir h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 20px;
+      color: var(--texto-escuro);
+      margin-bottom: 8px;
+    }
+
+    .como-medir ul {
+      margin-left: 20px;
+      line-height: 1.7;
+      color: var(--texto-escuro);
+      font-size: 14px;
+    }
+
+    .dicas-extras {
+      margin-top: 20px;
+      padding: 16px;
+      background: #ffffff;
+      border-radius: 16px;
+      border: 1px solid rgba(249,212,220,0.9);
+      font-size: 14px;
+      color: var(--texto-suave);
+      line-height: 1.6;
+    }
+
+    @media (max-width: 640px) {
+      .tamanhos-wrapper {
+        padding: 22px 16px;
+      }
+      .tamanhos-title {
+        font-size: 24px;
+      }
+      .tabela-tamanhos th,
+      .tabela-tamanhos td {
+        font-size: 12px;
+        padding: 8px;
+      }
+    }
+  </style>
+   <!-- HEADER -->
+<!-- HEADER BONITO COM LOGO + MENU + CARRINHO -->
+<header class="amora-header">
+  <div class="header-inner">
+
+    <!-- LOGO DA MARCA -->
+    <a href="index.html">
+      <img src="img/logo.png" class="header-logo" alt="Amora Intimates">
+    </a>
+
+    <!-- MENU (APENAS PÁGINAS, SEM CATEGORIAS) -->
+    <nav class="header-nav">
+      <a href="index.html">Home</a>
+      <a href="sobre.html">Sobre nós</a>
+      <a href="contato.html">Contato</a>
+      <a href="guia-tamanhos.html">Guia de tamanhos</a>
+    </nav>
+
+    <!-- CARRINHO -->
+    <div class="header-right">
+      <div class="cart-icon" onclick="window.location.href='carrinho.html'">
+        <span class="cart-count" id="cart-count">0</span>
+        🛒
+      </div>
+    </div>
+
+  </div>
+</header>
+<!-- HEADER BONITO COM LOGO + MENU + CARRINHO -->
+</head>
+<body>
+
+  <div class="page">
+
+    <!-- CONTEÚDO PRINCIPAL: GUIA DE TAMANHOS -->
+    <main>
+      <div class="tamanhos-wrapper">
+
+        <h1 class="tamanhos-title">Guia de Tamanhos</h1>
+        <p class="tamanhos-subtitle">
+          Use estas medidas como referência para encontrar o caimento perfeito. 💗
+        </p>
+
+        <!-- TABELA DE TAMANHOS -->
+        <table class="tabela-tamanhos">
+          <tr>
+            <th>Tamanho</th>
+            <th>Veste</th>
+            <th>Busto</th>
+            <th>Cintura</th>
+            <th>Quadril</th>
+          </tr>
+
+          <tr>
+            <td>P</td>
+            <td>34–36</td>
+            <td>78–84 cm</td>
+            <td>60–70 cm</td>
+            <td>84–92 cm</td>
+          </tr>
+
+          <tr>
+            <td>M</td>
+            <td>38–40</td>
+            <td>84–92 cm</td>
+            <td>70–78 cm</td>
+            <td>92–100 cm</td>
+          </tr>
+
+          <tr>
+            <td>G</td>
+            <td>42–44</td>
+            <td>92–102 cm</td>
+            <td>78–88 cm</td>
+            <td>100–110 cm</td>
+          </tr>
+
+          <tr>
+            <td>GG</td>
+            <td>46–48</td>
+            <td>102–112 cm</td>
+            <td>88–98 cm</td>
+            <td>110–120 cm</td>
+          </tr>
+
+          <tr>
+            <td>XG</td>
+            <td>50–52</td>
+            <td>112–124 cm</td>
+            <td>98–112 cm</td>
+            <td>120–134 cm</td>
+          </tr>
+        </table>
+
+        <!-- COMO MEDIR -->
+        <div class="como-medir">
+          <h3>Como medir</h3>
+          <ul>
+            <li><strong>Busto:</strong> Passe a fita ao redor da parte mais cheia do busto, mantendo-a reta e confortável.</li>
+            <li><strong>Cintura:</strong> Meça a parte mais fina da cintura, geralmente um pouco acima do umbigo.</li>
+            <li><strong>Quadril:</strong> Contorne a fita na região mais larga do quadril e bumbum.</li>
+            <li>Mantenha a fita justa, mas sem apertar demais, para não distorcer o tamanho.</li>
+          </ul>
+        </div>
+
+        <!-- DICAS EXTRAS -->
+        <div class="dicas-extras">
+          ⭐ <strong>Dica importante:</strong>  
+          As peças da Amora Intimates possuem elastano e se adaptam ao corpo.  
+          Se você ficar entre dois tamanhos, indicamos escolher o maior para mais conforto.
+          <br><br>
+          💬 Em dúvida sobre qual tamanho escolher em uma peça específica?  
+          Envie suas medidas no WhatsApp <strong>(15) 99762-8023</strong> e te ajudamos a escolher.
+        </div>
+
+      </div>
+    </main>
+
+    <!-- FOOTER GLOBAL -->
+    <footer>
+      <span>© <span id="ano-atual"></span> Amora Intimates. Todos os direitos reservados.</span>
+      <span>Itapeva/SP • Entrega gratuita na cidade • Contato: (15) 99762-8023</span>
+    </footer>
+
+  </div>
+
+  <!-- SCRIPTS GERAIS (carrinho, modal, etc.) -->
+  <script src="produtos-data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
+<a href="https://wa.me/5515997628023" class="whatsapp-float" target="_blank">
+  <svg width="34" height="34" viewBox="0 0 32 32" fill="none">
+    <path fill="#fff" d="M16 .3C7.5.3.5 7.3.5 15.8c0 3 .9 5.9 2.6 8.3L1 31l7.1-2c2.3 1.2 4.8 1.8 7.4 1.8 8.5 0 15.5-7 15.5-15.5S24.5.3 16 .3zm0 28c-2.3 0-4.6-.6-6.6-1.8l-.5-.3-4.2 1.2 1.1-4.1-.3-.5c-1.6-2.2-2.4-4.8-2.4-7.5C3.1 8.6 8.9 2.8 16 2.8s12.9 5.8 12.9 13c-.1 7.1-5.9 12.4-12.9 12.4zm7.4-9.3c-.4-.2-2.3-1.1-2.7-1.3-.4-.1-.7-.2-1 .2-.3.4-1.1 1.3-1.4 1.6-.3.3-.5.3-.9.1s-1.8-.7-3.4-2.1c-1.3-1.2-2.1-2.6-2.4-3-.2-.4 0-.6.1-.8l.6-.7c.2-.3.3-.4.4-.7.1-.3 0-.5 0-.7 0-.2-1-2.5-1.4-3.4-.4-.8-.7-.7-1-.7h-.9c-.3 0-.7.1-1 .5-.3.4-1.3 1.3-1.3 3.2 0 1.9 1.4 3.7 1.6 3.9.2.3 2.7 4.1 6.5 5.7 3.8 1.5 3.8 1 4.5 1 1-.1 2.3-.9 2.6-1.8.3-.9.3-1.7.2-1.8-.2-.1-.5-.2-.9-.3z"/>
+  </svg>
+</a>
